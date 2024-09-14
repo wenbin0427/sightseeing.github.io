@@ -19,7 +19,7 @@ $(function() {
       console.log('輸入的是:' + selectinput);
 
       // 顯示所有觀光工廠
-      var openUrl = "../sightseeingdata.json";
+      var openUrl = "https://wenbin0427.github.io/sightseeing.github.io/sightseeingdata.json";
       var xhr = new XMLHttpRequest();
       xhr.open('GET', openUrl, true);
       xhr.send();
