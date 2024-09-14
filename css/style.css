@@ -1,0 +1,21 @@
+.textc{
+    color: #98afbe;
+}
+html {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  @media (min-width: 768px) {
+    .modal-body .map-container {
+      height: 400px; /* 設定高度 */
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .modal-body .map-container {
+      height: 300px; /* 手機上的高度 */
+    }
+  }

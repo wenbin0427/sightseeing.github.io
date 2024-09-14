@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣觀光工廠</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/button.js"></script>
+
+    <style>
+        body{
+            background-color: #defee8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-sm-6 order-1">
+                <div class="card bg-transparent border-0 h-100">
+                    <div class="card-title mt-2">
+                        <h4 class="text-center textc fw-bolder">尋找觀光工廠</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="factoryname" class="form-label mt-3 textc fw-semibold">縣市</label>
+                            <select class="form-select" id="areaSelect">
+                                <option value="">請選擇縣市</option>
+                            </select>                            
+                            <div id="adv" style="display: none;">
+                                <label for="factoryname" class="form-label textc fw-semibold">觀光工廠名稱</label>
+                                <input type="text" class="form-control " id="factoryname" placeholder="請輸入觀光工廠名稱" >
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary w-100" id="advsearch">進階搜尋</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary w-100" id="search">搜尋</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 order-sm-1 mb-5">
+                <img class="img-fluid" src="./img/rightimg2.png" alt="">
+            </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row" id="viewfactory">
+            
+        </div>
+    </div>
+    <div id="modalview">
+
+    </div>
+    <footer class="text-center">資料來源：https://data.gov.tw/dataset/6848</footer>
+</body>
+</html>
