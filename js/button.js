@@ -19,7 +19,7 @@ $(function() {
       console.log('輸入的是:' + selectinput);
 
       // 顯示所有觀光工廠
-      var openUrl = "http://iotsvm.ddns.net/sightseeing/sightseeingdata.json";
+      var openUrl = "https://www.iotsvm.shop/sightseeing/sightseeingdata.json";
       var xhr = new XMLHttpRequest();
       xhr.open('GET', openUrl, true);
       xhr.send();

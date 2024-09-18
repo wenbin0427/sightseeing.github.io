@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://wenbin0427.github.io/sightseeing.github.io/areas.json')
+    fetch('https://www.iotsvm.shop/sightseeing/areas.json')
         .then(response => response.json())
         .then(data => {
             const selectElement = document.getElementById('areaSelect');
@@ -26,7 +26,7 @@ console.log('選擇的區域:' + selectedValue);
 console.log('輸入的是:' + selectinput);
 
 // 顯示所有觀光工廠
-var openUrl = "http://iotsvm.ddns.net/sightseeing/sightseeingdata.json";
+var openUrl = "https://www.iotsvm.shop/sightseeing/sightseeingdata.json";
 var xhr = new XMLHttpRequest();
 xhr.open('GET', openUrl, true);
 xhr.send();
